@@ -59,7 +59,7 @@ public class EmployeeController {
             employeeRepository.deleteById(id);
             return new ResponseEntity<>("Employee deleted successfully", HttpStatus.OK);
         } catch (Exception e) {
-            return new ResponseEntity<>("Failed to delete employee", HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>("Failedd to delete employee", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
